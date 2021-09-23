@@ -1,0 +1,124 @@
+/*
+Author: Christopher DeLeon
+Date: Sept. 21, 2021
+File name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style Rules for body and images */
+body {
+		background-color: #000;
+}
+
+img {
+		max-width: 100%;
+		display: block; 
+}
+
+/* Style rule for header */
+header {
+	width:25%;
+	float: left;
+}
+
+/* Style rule for navigation area */
+nav {
+		width: 70%;
+		float: right;
+		margin: 5em 3em 0 0;
+}
+
+nav ul {
+		list-style-type: none;
+		margin: 0;
+		text-align: right; 
+}
+
+nav li {
+		display: inline-block;
+		font-size: 1.5em;
+		font-family: Verdana, Arial, sans-serif;
+		font-weight: bold;
+}
+
+nav li a {
+		display: block;
+		color: #fff;
+		text-align: center;
+		padding: 0.5em 1em;
+		text-decoration: none; 
+}
+
+/* Style rules for main content */
+main {
+		clear: left;
+		background-color: #fff;
+		padding: 2%;
+		font-size: 1.25em;
+}
+
+.action {
+		font-size: 1.35em;
+		color: #666600;
+		font-weight: bold;
+}
+
+#weights, #cardio, #training {
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+}
+
+#exercises {
+		clear: left;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		background-color: #f2f2f2;
+		padding: 1% 2%;
+}
+
+#exercises dt {
+		font-weight: bold;
+}
+
+#exercises dd {
+		padding: 0.5% 1% 2% 0;
+}
+
+.external-link {
+		color: #666600;
+		font-weight: bold;
+		text-decoration: none;
+}
+
+#contact {
+		text-align: center;
+}
+
+#contact a {
+		color: #666600;
+		text-decoration: none;
+}
+
+.map {
+		border: 8px solid #000;
+}
+
+/* Style rules for footer content */
+footer p {
+		font-size: 0.75em;
+		text-align: center;
+		color: #fff;
+		padding: 0 1em;
+}
+
+footer p a {
+		color: #fff;
+		text-decoration: none;
+}
