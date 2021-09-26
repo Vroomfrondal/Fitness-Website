@@ -1,5 +1,5 @@
 # Fitness-Website
-This is a mock-gym website school project teaching the fundamentals of HTML 5, CSS & JS. It includes a variety of features including internal/external links, added images, consistent and detailed page styling, and support for mobile, tablet, and desktop devices.
+This is a mock-gym website school project teaching the fundamentals of HTML 5, CSS & JS. It includes a variety of features including internal/external links, images, custom fonts, embedded maps, consistent and detailed page styling, and support for mobile, tablet, and desktop devices.
 
 
 [Home Page Sample]
