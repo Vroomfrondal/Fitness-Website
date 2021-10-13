@@ -1,6 +1,6 @@
 /*
 Author: Christopher DeLeon
-Date: Sept. 27, 2021
+Date: October. 13, 2021
 File name: styles.css
 */
 
@@ -183,6 +183,41 @@ article:nth-of-type(2) {
 	height: 50%;
 }
 
+#form {
+	margin-top: 2%;
+	background-color: #f2f2f2;
+	padding: 2%;
+}
+
+#form h2 {
+	text-align: center;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label {
+	display: block;
+	padding-top: 3%;
+}
+
+form #submit {
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	background-color: #b3b3b3;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
 /* Style rules for footer content */
 footer p {
 	font-size: 0.75em;
@@ -199,165 +234,213 @@ footer p a {
 /* Media Query for Tablet Viewport */ 
 @media screen and (min-width: 630px), print {
 	
-	/* Tablet Viewport: Show tablet-desktop class,hide mobile class */
-	.tablet-desktop {
-		display: block;
-	}
+/* Tablet Viewport: Show tablet-desktop class,hide mobile class */
+.tablet-desktop {
+	display: block;
+}
 
-	.mobile {
-		display: none;
-	}
+.mobile {
+	display: none;
+}
 
-	/* Tablet Viewport:  Stylerule for header */
-	header {
-		padding-bottom: 2%;
-	}
+/* Tablet Viewport:  Stylerule for header */
+header {
+	padding-bottom: 2%;
+}
 
-	/* Tablet Viewport: Style rules for nav area */
-	nav li {
-		border-top:none;
-		display: inline-block;
-		border-right: 1px solid #fff;
-	}
+/* Tablet Viewport: Style rules for nav area */
+nav li {
+	border-top:none;
+	display: inline-block;
+	border-right: 1px solid #fff;
+}
 
-	nav li:last-child {
-		border-right: none;
-	}
+nav li:last-child {
+	border-right: none;
+}
 
-	nav li a {
-		padding: 0.1em 0.75em;
-	}
+nav li a {
+	padding: 0.1em 0.75em;
+}
 
-	/* Tablet Viewport: Style rules for main content area */
-	main ul {
-		margin: 0 0 4% 10%;
-	}
+/* Tablet Viewport: Style rules for main content area */
+main ul {
+	margin: 0 0 4% 10%;
+}
 	
-	.grid {
-		display: grid;
-		grid-template-columns: auto auto auto;
-		grid-gap: 20px;
-	}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
 	
-	.pic-text {
-		font-size: 1em;
-		padding: 10px;
-	}
+.pic-text {
+	font-size: 1em;
+	padding: 10px;
+}
 	
-	aside {
-		text-align: center;
-		font-size: 1.25em;
-		font-style: italic;
-		font-weight: bold;
-		padding: 2%;
-		background-color: rgba(204, 204, 204, 0.5);
-		box-shadow: 5px 5px 8px #000;
-		text-shadow: 5px 5px 5px #b3b3b3;
-		border-radius: 0 15px;
-	}
-	
-	.grid-item4 {
-		grid-column: 1 / span 3;
-	}
-
-	#exercises {
-		border-top: 1px solid #000;
-		border-bottom: 1px solid #000;
-		background: linear-gradient(to right, #ccc, #fff);
-		background-color: #f2f2f2;
-		padding: 1% 2%;
-	}
-
-	#exercises dt {
+aside {
+	text-align: center;
+	font-size: 1.25em;
+	font-style: italic;
 	font-weight: bold;
-	}
+	padding: 2%;
+	background-color: rgba(204, 204, 204, 0.5);
+	box-shadow: 5px 5px 8px #000;
+	text-shadow: 5px 5px 5px #b3b3b3;
+	border-radius: 0 15px;
+}
+	
+.grid-item4 {
+	grid-column: 1 / span 3;
+}
 
-	#exercises dd {
-		padding: 0.5% 1% 2% 0;
-	}
+#exercises {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background: linear-gradient(to right, #ccc, #fff);
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+}
 
-	.tel-num {
-		font-size: 1.25em;
-	}
+#exercises dt {
+font-weight: bold;
+}
 
-	.map {
-		width: 600px;
-		height: 450px;
-	}
+#exercises dd {
+	padding: 0.5% 1% 2% 0;
+}
 
+.tel-num {
+	font-size: 1.25em;
+}
+
+.map {
+	width: 600px;
+	height: 450px;
+}
+
+/*Tablet Viewport: Style Rules for Table */
+table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+}
+
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1%;
+}
+
+th, td {
+	border: 1px solid #000;
+	padding: 2%;
+}
+
+th {
+	background-color: #000;
+	color: #fff;
+	font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+	background-color: #ccc;
+}
+
+/* Tablet Viewport: Style rule for form element */
+form {
+	width: 70%;
+	margin: 0 auto;
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1015px), print {
 	
-	/* Desktop Viewport: Style rule for header */
-	header {
-		width: 25%;
-		float: left;
-		padding-bottom: 0;
-	}
+/* Desktop Viewport: Style rule for header */
+header {
+	width: 25%;
+	float: left;
+	padding-bottom: 0;
+}
 	
-	/* Desktop Viewport: Style rules for nav area */
-	nav {
-		float: right;
-		width: 70%;
-		margin: 4em 1em 0 0;
-	}
+/* Desktop Viewport: Style rules for nav area */
+nav {
+	float: right;
+	width: 70%;
+	margin: 4em 1em 0 0;
+}
 	
-	nav ul {
-		text-align: right;
-	}
+nav ul {
+	text-align: right;
+}
 	
-	nav li {
-		border: none;
-	}
+nav li {
+	border: none;
+}
 	
-	nav li a {
-		padding: 0.5em 1em;
-	}
+nav li a {
+	padding: 0.5em 1em;
+}
 	
-	nav li a:hover {
-		color: #000;
-		background-color: #fff;
-	}
+nav li a:hover {
+	color: #000;
+	background-color: #fff;
+}
 	
-	/* Desktop Viewport: Style Rules for main content */
-	main {
-		clear: left;
-	}
+/* Desktop Viewport: Style Rules for main content */
+main {
+	clear: left;
+}
 	
-	main h1 {
-		font-size: 1.8em;
-	}
+main h1 {
+	font-size: 1.8em;
+}
 	
-	article h3 {
-		font-size: 1.75em;
-	}
+article h3 {
+	font-size: 1.75em;
+}
 	
-	.pic-text {
-		font-size: 1.5em;
-		padding: 20px;
-	}
+.pic-text {
+	font-size: 1.5em;
+	padding: 20px;
+}
 	
-	.frame {
-		opacity: 0.9;
-	}
+.frame {
+	opacity: 0.9;
+}
 	
-	.frame:hover {
-		opacity: 1;
-		box-shadow: 8px 8px 10px #808080;
-	}
+.frame:hover {
+	opacity: 1;
+	box-shadow: 8px 8px 10px #808080;
+}
 	
-	#weights, #cardio, #training {
-		width: 29%;
-		float: left;
-		margin: 0 2%;
-	}
+#weights, #cardio, #training {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+}
 	
-	#exercises {
-		clear: left;
-	}
+#exercises {
+	clear: left;
+}
 	
+}
+
+/* Desktop Viewport: Style Rules for form elements */
+form {
+	width: auto;
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+
+.btn {
+	grid-column: 1 / span 3;
 }
 
 /* Media Query for Large Desktop Viewports */
@@ -370,12 +453,16 @@ footer p a {
 	
 }
 
+table {
+	width: 80%;
+}
+
 /* Media Query for Print */
 @media print {
 	
-	body {
-		background-color: #fff;
-		color: #000;
-	}
-	
+body {
+	background-color: #fff;
+	color: #000;
+}
+
 }
