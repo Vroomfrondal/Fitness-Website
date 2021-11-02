@@ -15,14 +15,28 @@
 <body>
 
 	<div id="container">
+	
+	<!-- Mobile Nav --> 
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
 
 		<!-- Use the header area for thle website name or logo -->
-		<header>
+		<header id="ffc-logo">
 			<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
 		</header>
 
-		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
+		<!-- Tablet, Desktop Nav -->
+		<nav class="tablet-desktop">
 			<ul>
 				<li><a href="index.html">Home</a></li> 
 				<li><a href="about.html">About Us</a></li> 
@@ -34,6 +48,14 @@
 		
 		<!-- Use the main area to add the main content of the webpage -->
 		<main>
+		
+			<video controls poster="images/hero-image.jpg">
+				<source src="media/ffc_video.mp4" type="video/mp4">
+				<source src="media/ffc_video.webm" type="video/webm">
+				<track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+				<track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+				<p>Your browser does not support the video element.</p>
+			</video>
 		
 		<section id="weights">
 		
@@ -80,14 +102,20 @@
 			<p>The following are common exercises that we encourage our clients to do as part of their daily exercise routine.</p>
 			<dl>
 				<dt>Burpee</dt>
-				<dd>Burpees are a great full-body exercise to increase your strength and endurance. Begin in a standing position, drop into a squat and extend your hands forward, kick your feet back and then forward again quickly, and then jump up from a squatted position. </dd>
+				<dd>Burpees are a great full-body exercise to increase your strength and endurance. Begin in a standing position, drop into a squat and extend your hands forward, kick your feet back and then forward again quickly, and then jump up from a squatted position. <span class="viewex" onclick="burpees()"> View Example.</span></dd>
 				
 				<dt>Plank</dt>
-				<dd>Planks build your core strength. To perform a plank, get in a push-up position and rest your forearms on the floor. Hold the position as long as you can. </dd>
+				<dd>Planks build your core strength. To perform a plank, get in a push-up position and rest your forearms on the floor. Hold the position as long as you can. <span class="viewex" onclick="plank()"> View Example.</span> </dd>
 				
 				<dt>Mountain Climber</dt>
-				<dd>Mountain climbers are a good cardio exercise. Place your hands on the floor in a push-up position, bring one knee up to your chest, and then switch as quickly as you can (as though you are climbing a mountain).</dd>
+				<dd>Mountain climbers are a good cardio exercise. Place your hands on the floor in a push-up position, bring one knee up to your chest, and then switch as quickly as you can (as though you are climbing a mountain). <span class="viewex" onclick="mountain()"> View Example.</span></dd>
 			</dl>
+			
+			<video controls id="example">
+				<source id="vid-src" src="vid" type="video/mp4">
+				<track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
+				<p>Your browser does not support the video element.</p>
+			</video>
 			
 			<p>For more information about how to stay active, visit the <a href="https://www.hhs.gov/fitness/be-active/index.html" target="_blank" class="external-link">U.S Department of Health and Human Services</a>.</p>
 			
@@ -101,6 +129,8 @@
 		</footer>
 	
 	</div>
+	
+	<script src="scripts/script.js"></script>
 	
 </body>
 </html>

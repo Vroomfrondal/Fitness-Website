@@ -1,11 +1,11 @@
 /*
 Author: Christopher DeLeon
-Date: October. 13, 2021
+Date: November 11, 2021
 File name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -16,7 +16,7 @@ body {
 	background-color: #000;
 }
 
-img {
+img, video {
 	max-width: 100%;
 	display: block; 
 }
@@ -39,40 +39,30 @@ header img {
 	margin: 0 auto;
 }
 
-/* Style rule for navigation area */
-nav {
-	padding: 1%;
-	margin-bottom: 1%;
-}
-
-nav ul {
-	list-style-type: none;
-	text-align: center; 
-}
-
-nav li {
-	font-size: 1.5em;
-	font-family: 'Francois One', sans-serif;
-	border-top: 1px solid #fff
-}
-
-nav li:first-child {
-	border-top: none;
-}
-
-nav li a {
-	display: block;
+/* Style rule for hamburger menu */
+.mobile-nav a {
 	color: #fff;
-	padding: 0.5em 1em;
-	text-decoration: none; 
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
 }
 
-/* Show mobile class, hide tablet-desktop class */
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
 .mobile {
 	display: block;
 }
 
-.tablet-desktop {
+.tablet-desktop, #menu-links {
 	display: none;
 }
 
@@ -82,6 +72,10 @@ main {
 	padding: 2%;
 	font-size: 1.15em;
 	font-family: 'Roboto Slab', serif;
+}
+
+video {
+	margin: 0 auto 4%;
 }
 
 .mobile h3 {
@@ -239,7 +233,7 @@ footer p a {
 	display: block;
 }
 
-.mobile {
+.mobile, .mobile-nav {
 	display: none;
 }
 
@@ -249,8 +243,19 @@ header {
 }
 
 /* Tablet Viewport: Style rules for nav area */
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center; 
+}
+
 nav li {
-	border-top:none;
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
 	display: inline-block;
 	border-right: 1px solid #fff;
 }
@@ -261,6 +266,9 @@ nav li:last-child {
 
 nav li a {
 	padding: 0.1em 0.75em;
+	display: block;
+	color: #fff;
+	text-decoration: none;
 }
 
 /* Tablet Viewport: Style rules for main content area */
@@ -311,6 +319,15 @@ font-weight: bold;
 	padding: 0.5% 1% 2% 0;
 }
 
+.viewex {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#example {
+	display: none;
+}
+
 .tel-num {
 	font-size: 1.25em;
 }
@@ -355,9 +372,32 @@ form {
 	margin: 0 auto;
 }
 
+/* Tablet Viewport: Animation */
+@-webkit-keyframes text-animation {
+	0% { font-size: 1em; }
+	50% { font-size: 2em; }
+	100% { font-size: 1.35em; }
+}
+
+@keyframes text-animation {
+	0% { font-size: 1em; }
+	50% { font-size: 2em; }
+	100% { font-size: 1.35em; }
+}
+
+figcaption {
+	-webkit-animation-name: text-animation;
+	animation-name: text-animation;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+}
+
+}
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1015px), print {
-	
+
 /* Desktop Viewport: Style rule for header */
 header {
 	width: 25%;
@@ -387,6 +427,7 @@ nav li a {
 nav li a:hover {
 	color: #000;
 	background-color: #fff;
+	transform: scale(1.3);
 }
 	
 /* Desktop Viewport: Style Rules for main content */
@@ -414,6 +455,7 @@ article h3 {
 .frame:hover {
 	opacity: 1;
 	box-shadow: 8px 8px 10px #808080;
+	transform: translateY(10px);
 }
 	
 #weights, #cardio, #training {
@@ -425,7 +467,11 @@ article h3 {
 #exercises {
 	clear: left;
 }
-	
+
+
+.offer:hover {
+	transform: scale(1.25);
+	cursor: pointer;
 }
 
 /* Desktop Viewport: Style Rules for form elements */
@@ -441,6 +487,8 @@ form {
 
 .btn {
 	grid-column: 1 / span 3;
+}
+
 }
 
 /* Media Query for Large Desktop Viewports */
