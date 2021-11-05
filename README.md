@@ -3,10 +3,15 @@ This is a mock-gym website school project teaching the fundamentals of HTML 5, C
 
 
 [Home Page Sample]
-![Screenshot (27)](https://user-images.githubusercontent.com/49052244/134822181-891d0110-f9db-45ca-9caa-6be653d624b1.png)
+![Screenshot (36)](https://user-images.githubusercontent.com/49052244/140564837-70506819-0c19-4949-83d1-1b0ec067e9ff.png)
+
 
 [About Us Page Sample]
-![Screenshot (28)](https://user-images.githubusercontent.com/49052244/134822194-c4608bcb-a285-4671-ad2d-f74470c9dc2f.png)
+![Screenshot (37)](https://user-images.githubusercontent.com/49052244/140564851-25861b17-24fe-4600-b032-cda791f8aadf.png)
 
-[Contact Us Page Sample]
-![Screenshot (30)](https://user-images.githubusercontent.com/49052244/134822224-91f3e1ad-ca21-4e2e-a56b-a7474df79ea2.png)
+
+[Nutrition Page Sample]
+![Screenshot (38)](https://user-images.githubusercontent.com/49052244/140564884-a63deb47-6d2f-437e-a042-30de5075325b.png)
+
+[Our Classes Page Sample]
+![Screenshot (39)](https://user-images.githubusercontent.com/49052244/140564915-d2b06529-6898-42fb-903e-fab51c64712a.png)
