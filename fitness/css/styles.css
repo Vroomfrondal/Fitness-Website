@@ -1,6 +1,6 @@
 /*
 Author: Christopher DeLeon
-Date: November 11, 2021
+Date: November 5, 2021
 File name: styles.css
 */
 
@@ -213,16 +213,29 @@ form #submit {
 }
 
 /* Style rules for footer content */
-footer p {
+footer .copyright {
 	font-size: 0.75em;
 	text-align: center;
 	color: #fff;
-	padding: 0 1em;
+	padding: 2% 4%;
+	float: left;
+	width: 75%;
 }
 
 footer p a {
 	color: #fff;
 	text-decoration: none;
+}
+
+.social {
+	float: right;
+	width: 20%;
+	padding: 2%;
+}
+
+.social img {
+	display: inline-block;
+	padding: 5%;
 }
 
 /* Media Query for Tablet Viewport */ 
